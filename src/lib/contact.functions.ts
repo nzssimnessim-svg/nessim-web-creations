@@ -5,7 +5,7 @@ const contactSchema = z.object({
   fullName: z.string().trim().min(2, "Nom trop court").max(100),
   email: z.string().trim().email("Email invalide").max(255),
   phone: z.string().trim().max(30).optional().or(z.literal("")),
-  projectType: z.enum(["Site vitrine", "E-commerce", "Landing page", "Refonte", "Maintenance", "Autre"]),
+  projectType: z.enum(["Site vitrine", "E-commerce", "Refonte", "Maintenance", "Autre"]),
   budget: z.string().trim().max(100).optional().or(z.literal("")),
   message: z.string().trim().min(10, "Message trop court").max(2000),
 });
