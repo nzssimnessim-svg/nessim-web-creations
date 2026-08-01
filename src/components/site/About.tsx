@@ -1,10 +1,9 @@
 import { Check } from "lucide-react";
 import { Reveal } from "@/hooks/use-reveal";
 import { Button } from "@/components/ui/button";
-import portrait from "@/assets/nessim.jpg";
 
 const points = [
-  "5 ans d'expérience en développement web",
+  "3 ans d'expérience en développement web",
   "Technologies modernes : React, Next.js, Shopify, WordPress",
   "Optimisation des performances et du référencement (SEO)",
   "Formation à la prise en main de votre site",
@@ -13,28 +12,14 @@ const points = [
 export function About() {
   return (
     <section id="apropos" className="bg-surface py-24">
-      <div className="mx-auto grid max-w-6xl items-center gap-14 px-5 lg:grid-cols-2">
+      <div className="mx-auto max-w-3xl px-5 text-center">
         <Reveal>
-          <div className="relative">
-            <div className="absolute -bottom-5 -left-5 hidden size-40 rounded-3xl bg-gradient-accent opacity-20 blur-2xl sm:block" />
-            <img
-              src={portrait}
-              alt="Nessim, développeur web freelance, à son bureau"
-              loading="lazy"
-              width={912}
-              height={1104}
-              className="relative w-full rounded-3xl object-cover shadow-lift"
-            />
-          </div>
-        </Reveal>
-
-        <Reveal delay={100}>
           <p className="text-sm font-semibold tracking-widest text-accent uppercase">À propos</p>
           <h2 className="mt-3 font-display text-3xl font-semibold sm:text-4xl">
             Bonjour, moi c'est Nessim
           </h2>
           <p className="mt-5 leading-relaxed text-muted-foreground">
-            Développeur web freelance passionné, j'accompagne depuis 5 ans des particuliers, des artisans et des
+            Développeur web freelance passionné, j'accompagne depuis 3 ans des particuliers, des artisans et des
             entreprises dans la création de leur présence en ligne. J'aime les projets bien faits : un design
             soigné, un code propre et un site qui charge vite.
           </p>
@@ -42,6 +27,7 @@ export function About() {
             Ma méthode est simple : on échange sur vos besoins, je vous propose une maquette, puis je développe
             votre site en gardant un contact régulier. Vous savez toujours où en est votre projet.
           </p>
+
 
           <ul className="mt-8 space-y-3">
             {points.map((p) => (
