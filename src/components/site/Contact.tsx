@@ -78,7 +78,7 @@ export function Contact() {
         body: JSON.stringify({
           access_key: import.meta.env["VITE_WEB3FORMS_ACCESS_KEY"],
           subject: `Nouvelle demande de devis — ${parsed.data.projectType}`,
-          from_name: "Site Nessim.dev",
+          from_name: "Site N.dev",
           replyto: parsed.data.email,
           "Nom complet": parsed.data.fullName,
           Email: parsed.data.email,
