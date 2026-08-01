@@ -17,7 +17,7 @@ export function Footer() {
               <Code2 className="size-5 text-accent-foreground" />
             </span>
             <span className="font-display text-lg font-semibold">
-              Nessim<span className="text-accent">.dev</span>
+              N<span className="text-accent">.dev</span>
             </span>
           </a>
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-navy-muted">
@@ -69,7 +69,7 @@ export function Footer() {
 
       <div className="border-t border-navy-muted/15">
         <p className="mx-auto max-w-6xl px-5 py-6 text-xs text-navy-muted">
-          © {new Date().getFullYear()} Nessim.dev — Tous droits réservés.
+          © {new Date().getFullYear()} N.dev — Tous droits réservés.
         </p>
       </div>
     </footer>
