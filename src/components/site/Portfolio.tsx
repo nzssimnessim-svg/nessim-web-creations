@@ -1,8 +1,6 @@
-import { ArrowUpRight } from "lucide-react";
 import { Reveal } from "@/hooks/use-reveal";
 import projet1 from "@/assets/projet-1.jpg";
 import projet2 from "@/assets/projet-2.jpg";
-import projet3 from "@/assets/projet-3.jpg";
 import projet4 from "@/assets/projet-4.jpg";
 
 const projects = [
@@ -19,18 +17,13 @@ const projects = [
     text: "Boutique de prêt-à-porter : catalogue, panier et paiement sécurisé.",
   },
   {
-    img: projet3,
-    tag: "Landing page",
-    title: "Kairo App",
-    text: "Landing page de lancement d'une application mobile, optimisée conversion.",
-  },
-  {
     img: projet4,
     tag: "Refonte",
     title: "Studio Bâti",
     text: "Refonte complète du site d'un studio d'architecture, plus rapide et mobile-first.",
   },
 ];
+
 
 export function Portfolio() {
   return (
