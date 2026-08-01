@@ -16,7 +16,7 @@ export function About() {
         <Reveal>
           <p className="text-sm font-semibold tracking-widest text-accent uppercase">À propos</p>
           <h2 className="mt-3 font-display text-3xl font-semibold sm:text-4xl">
-            Bonjour, moi c'est Nessim
+            À propos 
           </h2>
           <p className="mt-5 leading-relaxed text-muted-foreground">
             Développeur web freelance passionné, j'accompagne depuis 3 ans des particuliers, des artisans et des
