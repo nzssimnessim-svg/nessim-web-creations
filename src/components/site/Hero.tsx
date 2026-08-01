@@ -18,7 +18,7 @@ export function Hero() {
           </span>
 
           <h1 className="mt-6 font-display text-4xl leading-[1.08] font-semibold text-navy-foreground sm:text-5xl lg:text-6xl">
-            Je crée le site web dont votre entreprise a besoin</span>
+            Je crée le site web dont votre <span>entreprise a besoin</span>
           </h1>
 
           <p className="mt-6 max-w-xl text-base leading-relaxed text-navy-muted sm:text-lg">
