@@ -72,7 +72,31 @@ export function Contact() {
 
     setStatus("sending");
     try {
-      await submit({ data: parsed.data });
+      const web3formsRes = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          access_key: import.meta.env["VITE_WEB3FORMS_ACCESS_KEY"],
+          subject: `Nouvelle demande de devis — ${parsed.data.projectType}`,
+          from_name: "Site Nessim.dev",
+          replyto: parsed.data.email,
+          "Nom complet": parsed.data.fullName,
+          Email: parsed.data.email,
+          Téléphone: parsed.data.phone || "Non renseigné",
+          "Type de projet": parsed.data.projectType,
+          Budget: parsed.data.budget || "Non renseigné",
+          Message: parsed.data.message,
+        }),
+      });
+      const web3formsResult = (await web3formsRes.json().catch(() => null)) as { success?: boolean } | null;
+
+      if (!web3formsRes.ok || !web3formsResult?.success) {
+        throw new Error("web3forms_failed");
+      }
+
+      // Best-effort backup in Supabase; failing here should not block the user.
+      submit({ data: parsed.data }).catch((error) => console.error(error));
+
       setStatus("sent");
       setValues(initial);
     } catch (error) {
