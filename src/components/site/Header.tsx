@@ -35,7 +35,7 @@ export function Header() {
           <span
             className={`font-display text-lg font-semibold tracking-tight ${scrolled ? "text-foreground" : "text-navy-foreground"}`}
           >
-            Nessim<span className="text-accent">.dev</span>
+            N<span className="text-accent">.dev</span>
           </span>
         </a>
 
