@@ -41,7 +41,7 @@ export function Portfolio() {
           {projects.map((p, i) => {
             const isLast = i === projects.length - 1;
             return (
-              <Reveal key={p.title} delay={i * 80} className={isLast ? "sm:col-span-2 sm:flex sm:justify-center" : undefined}>
+              <Reveal key={p.title} delay={i * 80} className={isLast ? "sm:col-span-2 sm:flex sm:justify-center" : ""}>
                 <article className={`group h-full overflow-hidden rounded-2xl border border-border bg-card shadow-soft transition-all duration-500 hover:-translate-y-1.5 hover:shadow-lift ${isLast ? "sm:w-[calc(50%-0.875rem)]" : "w-full"}`}>
                   <div className="relative aspect-4/3 overflow-hidden">
                     <img
