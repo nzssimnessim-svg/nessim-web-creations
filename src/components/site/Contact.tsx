@@ -96,7 +96,7 @@ export function Contact() {
 
           <ul className="mt-9 space-y-5">
             {[
-              { Icon: Mail, title: "Email", text: "contact@nessim.dev" },
+              { Icon: Mail, title: "Email", text: "dev.nessim@gmail.com" },
               { Icon: Clock, title: "Réponse", text: "Sous 24h ouvrées" },
               { Icon: MapPin, title: "Zone", text: "France entière, 100% à distance" },
             ].map(({ Icon, title, text }) => (
@@ -221,7 +221,7 @@ export function Contact() {
 
                 {status === "error" ? (
                   <p className="rounded-lg bg-destructive/10 px-4 py-3 text-sm text-destructive">
-                    Une erreur est survenue. Merci de réessayer ou de m'écrire à contact@nessim.dev.
+                    Une erreur est survenue. Merci de réessayer ou de m'écrire à dev.nessim@gmail.com.
                   </p>
                 ) : null}
 

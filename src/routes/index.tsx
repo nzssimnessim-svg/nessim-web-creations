@@ -38,7 +38,7 @@ export const Route = createFileRoute("/")({
             "Refonte de site web",
             "Maintenance de site web",
           ],
-          email: "contact@nessim.dev",
+          email: "dev.nessim@gmail.com",
         }),
       },
     ],
