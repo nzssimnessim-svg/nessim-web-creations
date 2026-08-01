@@ -2,7 +2,7 @@ import { Code2, Mail, Linkedin, Github, Twitter } from "lucide-react";
 
 const links = [
   { href: "#services", label: "Services" },
-  { href: "#portfolio", label: "Portfolio" },
+  { href: "#projets", label: "Projets" },
   { href: "#apropos", label: "À propos" },
   { href: "#contact", label: "Contact" },
 ];
@@ -42,11 +42,11 @@ export function Footer() {
         <div>
           <h3 className="font-display text-sm font-semibold tracking-wide uppercase">Contact</h3>
           <a
-            href="mailto:contact@nessim.dev"
+            href="mailto:dev.nessim@gmail.com"
             className="mt-4 flex items-center gap-2 text-sm text-navy-muted transition-colors hover:text-accent"
           >
             <Mail className="size-4" />
-            contact@nessim.dev
+            dev.nessim@gmail.com
           </a>
           <div className="mt-5 flex gap-3">
             {[

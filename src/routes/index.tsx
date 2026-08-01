@@ -34,11 +34,10 @@ export const Route = createFileRoute("/")({
           serviceType: [
             "Création de site vitrine",
             "Création de site e-commerce",
-            "Landing page",
             "Refonte de site web",
             "Maintenance de site web",
           ],
-          email: "contact@nessim.dev",
+          email: "dev.nessim@gmail.com",
         }),
       },
     ],

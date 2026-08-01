@@ -1,8 +1,6 @@
-import { ArrowUpRight } from "lucide-react";
 import { Reveal } from "@/hooks/use-reveal";
 import projet1 from "@/assets/projet-1.jpg";
 import projet2 from "@/assets/projet-2.jpg";
-import projet3 from "@/assets/projet-3.jpg";
 import projet4 from "@/assets/projet-4.jpg";
 
 const projects = [
@@ -19,12 +17,6 @@ const projects = [
     text: "Boutique de prêt-à-porter : catalogue, panier et paiement sécurisé.",
   },
   {
-    img: projet3,
-    tag: "Landing page",
-    title: "Kairo App",
-    text: "Landing page de lancement d'une application mobile, optimisée conversion.",
-  },
-  {
     img: projet4,
     tag: "Refonte",
     title: "Studio Bâti",
@@ -32,9 +24,10 @@ const projects = [
   },
 ];
 
+
 export function Portfolio() {
   return (
-    <section id="portfolio" className="py-24">
+    <section id="projets" className="py-24">
       <div className="mx-auto max-w-6xl px-5">
         <Reveal className="max-w-2xl">
           <p className="text-sm font-semibold tracking-widest text-accent uppercase">Réalisations</p>
@@ -57,10 +50,8 @@ export function Portfolio() {
                     height={900}
                     className="size-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-hero opacity-0 transition-opacity duration-500 group-hover:opacity-70" />
-                  <span className="absolute inset-x-0 bottom-0 flex translate-y-3 items-center gap-2 p-6 text-sm font-semibold text-navy-foreground opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
-                    Voir le projet <ArrowUpRight className="size-4 text-accent" />
-                  </span>
+                  <div className="absolute inset-0 bg-gradient-hero opacity-0 transition-opacity duration-500 group-hover:opacity-40" />
+
                 </div>
                 <div className="p-6">
                   <span className="text-xs font-semibold tracking-wider text-accent uppercase">{p.tag}</span>

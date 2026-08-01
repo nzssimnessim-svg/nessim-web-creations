@@ -34,7 +34,7 @@ export function Hero() {
               </a>
             </Button>
             <Button asChild variant="outlineLight" size="xl">
-              <a href="#portfolio">Voir mes réalisations</a>
+              <a href="#projets">Voir mes réalisations</a>
             </Button>
           </div>
 

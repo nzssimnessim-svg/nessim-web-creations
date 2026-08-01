@@ -16,7 +16,7 @@ import {
 import { Reveal } from "@/hooks/use-reveal";
 import { submitContactRequest } from "@/lib/contact.functions";
 
-const projectTypes = ["Site vitrine", "E-commerce", "Landing page", "Refonte", "Maintenance", "Autre"] as const;
+const projectTypes = ["Site vitrine", "E-commerce", "Refonte", "Maintenance", "Autre"] as const;
 const budgets = [
   "Moins de 1 000 €",
   "1 000 € – 3 000 €",
@@ -96,7 +96,7 @@ export function Contact() {
 
           <ul className="mt-9 space-y-5">
             {[
-              { Icon: Mail, title: "Email", text: "contact@nessim.dev" },
+              { Icon: Mail, title: "Email", text: "dev.nessim@gmail.com" },
               { Icon: Clock, title: "Réponse", text: "Sous 24h ouvrées" },
               { Icon: MapPin, title: "Zone", text: "France entière, 100% à distance" },
             ].map(({ Icon, title, text }) => (
@@ -137,7 +137,6 @@ export function Contact() {
                       id="fullName"
                       value={values.fullName}
                       onChange={(e) => set("fullName", e.target.value)}
-                      placeholder="Marie Dupont"
                       maxLength={100}
                     />
                     {errors.fullName ? <p className="text-xs text-destructive">{errors.fullName}</p> : null}
@@ -150,7 +149,6 @@ export function Contact() {
                       type="email"
                       value={values.email}
                       onChange={(e) => set("email", e.target.value)}
-                      placeholder="marie@entreprise.fr"
                       maxLength={255}
                     />
                     {errors.email ? <p className="text-xs text-destructive">{errors.email}</p> : null}
@@ -165,7 +163,6 @@ export function Contact() {
                       type="tel"
                       value={values.phone}
                       onChange={(e) => set("phone", e.target.value)}
-                      placeholder="06 12 34 56 78"
                       maxLength={30}
                     />
                   </div>
@@ -213,7 +210,6 @@ export function Contact() {
                     rows={5}
                     value={values.message}
                     onChange={(e) => set("message", e.target.value)}
-                    placeholder="Décrivez votre activité, vos objectifs, vos éventuelles inspirations…"
                     maxLength={2000}
                   />
                   {errors.message ? <p className="text-xs text-destructive">{errors.message}</p> : null}
@@ -221,7 +217,7 @@ export function Contact() {
 
                 {status === "error" ? (
                   <p className="rounded-lg bg-destructive/10 px-4 py-3 text-sm text-destructive">
-                    Une erreur est survenue. Merci de réessayer ou de m'écrire à contact@nessim.dev.
+                    Une erreur est survenue. Merci de réessayer ou de m'écrire à dev.nessim@gmail.com.
                   </p>
                 ) : null}
 
