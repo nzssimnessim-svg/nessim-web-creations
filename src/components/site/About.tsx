@@ -28,8 +28,7 @@ export function About() {
             votre site en gardant un contact régulier. Vous savez toujours où en est votre projet.
           </p>
 
-
-          <ul className="mt-8 space-y-3">
+          <ul className="mx-auto mt-8 grid max-w-xl gap-3 text-left sm:grid-cols-2">
             {points.map((p) => (
               <li key={p} className="flex items-start gap-3 text-sm">
                 <span className="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-gradient-accent">
@@ -39,6 +38,7 @@ export function About() {
               </li>
             ))}
           </ul>
+
 
           <Button asChild variant="accent" size="lg" className="mt-9">
             <a href="#contact">Parlons de votre projet</a>
