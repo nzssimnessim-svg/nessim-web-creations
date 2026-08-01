@@ -32,7 +32,9 @@ export function Header() {
           <span className="flex size-9 items-center justify-center rounded-xl bg-gradient-accent shadow-accent">
             <Code2 className="size-5 text-navy" />
           </span>
-          <span className="font-display text-lg font-semibold tracking-tight">
+          <span
+            className={`font-display text-lg font-semibold tracking-tight ${scrolled ? "text-foreground" : "text-navy-foreground"}`}
+          >
             Nessim<span className="text-accent">.dev</span>
           </span>
         </a>
@@ -42,7 +44,9 @@ export function Header() {
             <li key={l.href}>
               <a
                 href={l.href}
-                className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+                className={`text-sm font-medium transition-colors hover:text-accent ${
+                  scrolled ? "text-muted-foreground" : "text-navy-muted"
+                }`}
               >
                 {l.label}
               </a>
@@ -60,7 +64,7 @@ export function Header() {
           type="button"
           onClick={() => setOpen((v) => !v)}
           aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
-          className="rounded-lg p-2 text-foreground md:hidden"
+          className={`rounded-lg p-2 md:hidden ${scrolled ? "text-foreground" : "text-navy-foreground"}`}
         >
           {open ? <X className="size-6" /> : <Menu className="size-6" />}
         </button>
