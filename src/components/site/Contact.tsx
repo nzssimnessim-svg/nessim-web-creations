@@ -19,9 +19,8 @@ import { submitContactRequest } from "@/lib/contact.functions";
 const projectTypes = ["Site vitrine", "E-commerce", "Refonte", "Maintenance", "Autre"] as const;
 const budgets = [
   "Moins de 1 000 €",
-  "1 000 € – 3 000 €",
-  "3 000 € – 6 000 €",
-  "Plus de 6 000 €",
+  "1 000 € – 2 000 €",
+  "2 000 € – 3 000 €",
   "À définir ensemble",
 ];
 
