@@ -17,7 +17,7 @@ export function Footer() {
               <Code2 className="size-5 text-accent-foreground" />
             </span>
             <span className="font-display text-lg font-semibold">
-              N<span className="text-accent">.dev</span>
+              N<span className="text-accent">.d</span>
             </span>
           </a>
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-navy-muted">
