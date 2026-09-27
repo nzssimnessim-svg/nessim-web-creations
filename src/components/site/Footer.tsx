@@ -69,7 +69,7 @@ export function Footer() {
 
       <div className="border-t border-navy-muted/15">
         <p className="mx-auto max-w-6xl px-5 py-6 text-xs text-navy-muted">
-          © {new Date().getFullYear()} N.dev — Tous droits réservés.
+          © {new Date().getFullYear()} N.d — Tous droits réservés.
         </p>
       </div>
     </footer>
